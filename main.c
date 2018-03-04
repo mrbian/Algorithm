@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include "insertion_sort/insertion_sort.h"
 
 int main() {
-    printf("Hello, World!\n");
+    insertion_sort_test();
     return 0;
 }

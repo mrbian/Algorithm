@@ -3,4 +3,4 @@ project(Algorithm C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(Algorithm main.c insertion_sort/insertion_sort.c)
+add_executable(Algorithm main.c insertion_sort/insertion_sort.c insertion_sort/insertion_sort.h common/common.h common/common.c)
