@@ -26,14 +26,5 @@ void insertion_sort(int * arr, int n){
 
 void insertion_sort_test(){
     int arr[] = {6,5,2,4,6,1,3};            // 首项为数组长度
-    printf("The origin array is ");
-    print_arr(arr,6);
-    printf("\n");
-
-    insertion_sort(arr,6);
-
-    printf("Now the array is ");
-    print_arr(arr,6);
-    printf("\n");
+    print_func_test(arr,arr[0],insertion_sort);
 }
-

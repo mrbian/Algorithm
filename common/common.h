@@ -7,4 +7,8 @@
 
 #include <stdio.h>
 
+void print_arr(int *arr, int n);
+
+void print_func_test(int *arr, int n, void(*pfun)(int *arr, int n));
+
 #endif //ALGORITHM_COMMON_H
