@@ -24,7 +24,29 @@ void insertion_sort(int * arr, int n){
     }
 }
 
+// 利用二分法的插入排序，时间复杂度为O(nlgn)
+void insertion_sort_binary_search(int* arr, int n){
+    int i,j,k,key;
+    int low,high,mid;
+    for(j=2;j<=n;j++){
+        key = arr[j];
+        low = 1; high = j - 1;
+        while(low <= high){                             // 结束后low的位置就是应当插入的位置
+            mid = (low + high) / 2;
+            if(arr[mid] >= key) high = mid - 1;
+            else low = mid + 1;
+        }
+        i = low; k = j - 1;
+        while(i < j){                                   // low位置到j位置的元素依次后移一位
+            arr[k + 1] = arr[k];
+            k--; i++;
+        }
+        arr[low] = key;
+    }
+}
+
 void insertion_sort_test(){
     int arr[] = {6,5,2,4,6,1,3};            // 首项为数组长度
-    print_func_test(arr,arr[0],insertion_sort);
+//    print_func_test(arr,arr[0],insertion_sort);
+    print_func_test(arr,arr[0],insertion_sort_binary_search);
 }
