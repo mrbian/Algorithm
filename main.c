@@ -6,6 +6,7 @@
 #include "Problems/1/solution.h"
 #include "bubble_sort/bubble_sort.h"
 #include "Problems/2/solution.h"
+#include "Problems/3/find-max-subarray.h"
 
 int main() {
 //    insertion_sort_test();
@@ -14,6 +15,7 @@ int main() {
 //    BinarySearchTest();
 //    problem1_solution();
 //    bubble_sort_test();
-    problem2_solution();
+//    problem2_solution();
+    problem3_solution_test();
     return 0;
 }
