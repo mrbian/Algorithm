@@ -14,6 +14,7 @@ int* getDiffArray(int* arr, int n){
         A[i] = arr[i+1] - arr[i];
     }
     return A;
+
 }
 
 // 暴力破解，返回最大子数组的边界和最大子数组的和，此方法的时间复杂度为O(n方)

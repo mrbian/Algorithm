@@ -7,6 +7,8 @@
 #include "bubble_sort/bubble_sort.h"
 #include "Problems/2/solution.h"
 #include "Problems/3/find-max-subarray.h"
+#include "Problems/4/Strassen.h"
+#include "array_function_pointer/array_function_pointer.h"
 
 int main() {
 //    insertion_sort_test();
@@ -16,6 +18,8 @@ int main() {
 //    problem1_solution();
 //    bubble_sort_test();
 //    problem2_solution();
-    problem3_solution_test();
+//    problem3_solution_test();
+    problem4_solution_test();
+//    pointer_diff_test();
     return 0;
 }
